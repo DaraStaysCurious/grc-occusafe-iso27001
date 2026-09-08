@@ -109,6 +109,28 @@ documents above.*
 
 ---
 
+Platform Implementation
+
+The gap analysis above documents what OccuSafe needs. This section shows it operationalized in a real GRC platform — not just described, but actually configured.
+
+Using a ServiceNow developer instance, I built a compliance data model in App Engine Studio (ServiceNow's GRC/IRM module is subscription-gated even on free developer tiers, so I built the equivalent structure directly):
+
+Policy table — 3 governing policies (Information Security, Incident Response, Access Control), each mapped to the ISO 27001 domains they cover.
+Control table — 8 controls pulled directly from this repo's gap analysis (A.5.1, A.5.24, A.8.2, A.8.3, A.8.5, A.8.8, A.8.13, A.8.32), each carrying its actual current-state / target-state language from the assessment above, linked to its governing policy.
+Risk table — the four key findings from the executive summary, each linked to the specific control that mitigates it.
+
+The result is a working relational chain — Risk → Mitigating Control → Governing Policy — the same structure underlying commercial platforms like Vanta, Drata, or Archer.
+<img width="1695" height="1112" alt="Screenshot 2026-09-08 at 7 04 27 PM" src="https://github.com/user-attachments/assets/8a0bb1ac-e49a-4bee-904e-a0e596294127" />
+Policy library - three governing policies mapped to ISO 27001, each built from a documented Critical-rated gap in the assessment above.
+<img width="1689" height="1114" alt="Screenshot 2026-09-08 at 7 02 14 PM" src="https://github.com/user-attachments/assets/baaa4172-4fa5-4666-9eab-b412d1e81183" />
+Control library - eight Annex A controls from the gap analysis, each carrying its current-state/target-state language and linked back to its governing policy.
+<img width="1688" height="1110" alt="Screenshot 2026-09-08 at 7 09 10 PM" src="https://github.com/user-attachments/assets/1e86248a-1cee-4f8f-a987-dfdafae6b230" />
+Risk register - the four key findings from the executive summary, each linked to its mitigating control via a Reference field.
+<img width="1680" height="1112" alt="Screenshot 2026-09-08 at 6 59 57 PM" src="https://github.com/user-attachments/assets/fceef039-9b75-4ff7-b540-df85bfbcd397" />
+The full relational chain in practice: a real risk (alterable safety records, no audit trail) linked directly to the control that mitigates it (A.8.32 — Change management).
+
+---
+
 ## Contact
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
