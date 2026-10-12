@@ -73,7 +73,7 @@ management program, no incident response plan.
 | A.5.2 — Information security roles | Defined roles and responsibilities | CTO informally owns security — no formal definition | No documented roles, responsibilities, or accountability | **Critical** |
 | A.5.5 — Contact with authorities | Defined process for regulatory contact | No process defined | No OSHA, HHS, or law enforcement contact procedure | **Moderate** |
 | A.5.7 — Threat intelligence | Process for gathering and acting on threat intel | None | No threat monitoring or intelligence function | **High** |
-| A.5.19 — Supplier relationships | Security requirements for suppliers | No supplier security program | HRIS integrations — Workday, ADP, BambooHR — unassessed | **Critical** |
+| A.5.19 — Supplier relationships | Security requirements for suppliers | No supplier security program | HRIS integrations (Workday, ADP, BambooHR) unassessed; no documented BAA with AWS | **Critical** |
 | A.5.24 — Incident response planning | Documented incident response plan | None | No IR plan, no defined roles, no communication procedures | **Critical** |
 | A.5.25 — Incident assessment | Process for classifying and prioritizing incidents | None | No classification criteria or escalation procedures | **High** |
 | A.5.26 — Response to incidents | Defined response procedures | None | No containment, eradication, or recovery procedures | **High** |
