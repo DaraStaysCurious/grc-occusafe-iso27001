@@ -41,6 +41,8 @@ reduces total implementation effort by an estimated 40%.
 | Privacy Rule | Who can access PHI and under what circumstances | Governs which OccuSafe stakeholders can access employee health records |
 | Security Rule | How ePHI must be protected | Defines administrative, physical, and technical controls required |
 
+Applicability note: Some of OccuSafe's data (injury treatment and return-to-work records) is health information, and OccuSafe serves healthcare customers. Whether a given record counts as PHI, or as an employment record excluded from HIPAA's definition of PHI (45 CFR 160.103), depends on the customer's role and how the record is held. This assessment applies the HIPAA Security Rule as a conservative baseline.
+
 **The Minimum Necessary Principle:**
 Access to PHI must be limited to the minimum necessary to perform
 a job function. At OccuSafe, this principle is currently violated
@@ -70,14 +72,9 @@ across multiple stakeholder groups.
 | Assigned security responsibility | A.5.2 — Security roles | CTO informally — not documented | **Critical** |
 | Workforce training and awareness | A.6.3 — Security awareness training | None | **High** |
 | Evaluation — periodic security assessment | A.5.36 — Compliance review | None | **Moderate** |
-| Business associate agreements | A.5.19 — Supplier relationships | No BAAs with HRIS vendors | **Critical** |
+| Business associate agreements | A.5.19 — Supplier relationships | No documented BAA with AWS, which stores and processes ePHI on OccuSafe's behalf | **Critical** |
 
-> **Note on Business Associate Agreements (BAAs):**
-> HIPAA requires formal agreements with any vendor that handles
-> PHI on OccuSafe's behalf. Workday, ADP, and BambooHR all
-> process employee data that may include PHI. No BAAs currently
-> exist — this is a standalone HIPAA requirement with no direct
-> ISO 27001 equivalent.
+> **Note on Business Associate Agreements (BAAs):** HIPAA requires a BAA when a vendor creates, receives, maintains, or transmits PHI on OccuSafe's behalf. AWS stores and processes OccuSafe's production data, including employee health records, and no BAA is documented. Workday, ADP, and BambooHR are not covered by this finding: they are customer-side HRIS integrations that send OccuSafe only name, ID, department, and role, with no health data (see the Vendor & Third-Party Risk Assessment). ISO 27001 addresses supplier security (A.5.19) but does not require BAAs, so this remains a standalone HIPAA requirement.
 
 ---
 
@@ -113,7 +110,7 @@ across multiple stakeholder groups.
 
 | Finding | HIPAA requirement | ISO 27001 equivalent | Rating |
 |---------|------------------|---------------------|--------|
-| No Business Associate Agreements with HRIS vendors | BAA requirement | A.5.19 — Supplier relationships | **Critical** |
+| No Business Associate Agreement with AWS (cloud provider storing ePHI) | BAA requirement | A.5.19 — Supplier relationships | **Critical** |
 | Engineers accessing real PHI in production | Minimum necessary principle | A.8.3 — Access restriction | **Critical** |
 | No PHI data masking in non-production environments | Minimum necessary principle | A.8.11 — Data masking | **Critical** |
 | No process for responding to patient rights requests | Privacy Rule — data subject rights | A.5.34 — Privacy and PII | **Moderate** |
@@ -131,7 +128,7 @@ across multiple stakeholder groups.
 | Implement data masking in non-production environments | A.8.11 | Minimum necessary, access controls |
 | Establish security awareness training program | A.6.3 | Workforce training requirement |
 | Formalize security roles and responsibilities | A.5.2 | Assigned security responsibility |
-| Establish supplier security program + BAAs | A.5.19 | Business associate agreements |
+| Establish supplier security program + AWS BAA | A.5.19 | Business associate agreements |
 | Implement MFA across all systems | A.8.5 | Access controls — authentication |
 | Establish formal incident response plan | A.5.24, A.5.25, A.5.26 | Security incident procedures |
 | Implement backup and DR program | A.8.13 | Contingency plan — backup |
