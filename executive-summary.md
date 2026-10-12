@@ -89,7 +89,7 @@ simultaneously.
 | 4 | Enforce MFA across all systems | Engineering Lead |
 | 5 | Establish and test disaster recovery plan | CTO |
 | 6 | Implement formal backup policy and verification | Engineering Lead |
-| 7 | Execute Business Associate Agreements with HRIS vendors | Legal + HR |
+| 7 | Execute a Business Associate Agreement with AWS | Legal + CTO |
 | 8 | Implement data masking in non-production environments | Engineering Lead |
 | 9 | Establish cloud configuration management process | CTO + Engineering |
 | 10 | Implement privileged access management | CTO |
