@@ -62,7 +62,7 @@ cloud configuration review process.
 
 **Out of scope:**
 - Customer internal systems and networks
-- Third-party HRIS platforms
+- Third-party HRIS platforms (internal security not assessed; vendor risk assessed separately from public attestations)
 - Physical security of customer facilities
 
 ---
