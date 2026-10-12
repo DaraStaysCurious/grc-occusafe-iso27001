@@ -1,7 +1,6 @@
 # Vendor & Third-Party Risk Assessment - OccuSafe HRIS Integrations
 
-> The ISO 27001 gap analysis in this repo rated **A.5.19 - Supplier
-> Relationships** as **Critical**, citing three unassessed HRIS
+> The ISO 27001 gap analysis in this repo rated **A.5.19 - Information security in supplier relationships** as **Critical**, citing three unassessed HRIS
 > integrations: Workday, ADP, and BambooHR. This document closes the assessment portion of that gap. The supplier security program and the AWS Business Associate Agreement remain open items in remediation-roadmap.md.
 
 ---
@@ -31,6 +30,7 @@ This assessment evaluates each vendor's publicly documented security
 attestations, identifies where attestation access is restricted or
 scope is ambiguous, and assigns a residual risk rating consistent
 with the methodology used throughout this repo.
+Review date: [09/2026]
 
 ---
 
