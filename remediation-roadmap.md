@@ -49,6 +49,7 @@ findings must be resolved before certification audit Stage 2.
 |-|------------|-----------|
 | **Low Effort** | Do first | Do if time permits |
 | **High Effort** | Plan carefully | Deprioritize |
+
 Note: a roadmap finding is rated by the severity of the specific gap it closes. One control can generate more than one finding (for example, A.8.13 produces the backup, disaster recovery, and geographic redundancy findings), and one finding can close several controls.
 
 ---
