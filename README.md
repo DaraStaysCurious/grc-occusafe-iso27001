@@ -99,8 +99,7 @@ AWS cloud infrastructure, 200 mid-market customers
   incident records are alterable without audit trail
 - **Critical:** No disaster recovery plan — ransomware attack would
   produce complete operational shutdown with no recovery path
-- **High:** Employee health data accessible beyond HR — role-based
-  access controls not enforced at data level
+- **Critical:** Employee health data accessible beyond HR — role-based access controls not enforced at data level
 - **High:** Multi-tenant data isolation not formally verified —
   customer data separation relies on application logic without
   independent validation
