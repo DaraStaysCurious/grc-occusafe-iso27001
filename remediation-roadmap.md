@@ -49,6 +49,7 @@ findings must be resolved before certification audit Stage 2.
 |-|------------|-----------|
 | **Low Effort** | Do first | Do if time permits |
 | **High Effort** | Plan carefully | Deprioritize |
+Note: a roadmap finding is rated by the severity of the specific gap it closes. One control can generate more than one finding (for example, A.8.13 produces the backup, disaster recovery, and geographic redundancy findings), and one finding can close several controls.
 
 ---
 
@@ -60,8 +61,8 @@ findings must be resolved before certification audit Stage 2.
 | # | Finding | Owner | Effort | Frameworks closed |
 |---|---------|-------|--------|------------------|
 | 1 | Implement audit trail on all record modifications | Engineering Lead | Medium | ISO A.5.33, HIPAA Technical |
-| 2 | Establish formal incident response plan | CTO + Legal | Medium | ISO A.5.24–26, NIST Respond |
-| 3 | Implement role-based access controls at data level | Engineering Lead | High | ISO A.8.3, HIPAA Technical |
+| 2 | Establish formal incident response plan | CTO + Legal | Medium | ISO A.5.24–28, NIST Respond |
+| 3 | Implement role-based access controls at data level and verify multi-tenant data isolation | Engineering Lead | High | ISO A.8.3, HIPAA Technical |
 | 4 | Enforce MFA across all systems | Engineering Lead | Low | ISO A.8.5, HIPAA Technical |
 | 5 | Establish and test disaster recovery plan | CTO | High | ISO A.8.13, NIST Recover |
 | 6 | Implement formal backup policy and verification | Engineering Lead | Medium | ISO A.8.13, NIST Recover |
@@ -85,7 +86,7 @@ findings must be resolved before certification audit Stage 2.
 | 14 | Establish vulnerability management program | Engineering Lead | Medium | ISO A.8.8, NIST Identify |
 | 15 | Implement centralized log management and alerting | Engineering Lead | High | ISO A.8.15–16, NIST Detect |
 | 16 | Establish supplier security program | CTO | Medium | ISO A.5.19, HIPAA Administrative |
-| 17 | Implement endpoint security policy for remote workers | CTO | Low | ISO A.7.9, HIPAA Physical |
+| 17 | Implement endpoint security and malware protection policy for remote workers | CTO | Low | ISO A.7.9, A.8.7, HIPAA Physical |
 | 18 | Implement formal change management process | Engineering Lead | Medium | ISO A.8.32, NIST Protect |
 | 19 | Establish data retention and deletion policy | Legal + HR Director | Low | ISO A.8.10, HIPAA Technical |
 | 20 | Implement DLP controls | Engineering Lead | High | ISO A.8.12, NIST Protect |
@@ -95,7 +96,7 @@ findings must be resolved before certification audit Stage 2.
 | 24 | Define and document offboarding security procedures | HR Director | Low | ISO A.6.5, HIPAA Administrative |
 | 25 | Implement automatic session logoff | Engineering Lead | Low | ISO A.8.3, HIPAA Technical |
 | 26 | Establish formal remote work security policy | CTO | Low | ISO A.6.7, HIPAA Physical |
-| 27 | Implement secure development lifecycle | Engineering Lead | High | ISO A.8.25, NIST Protect |
+| 27 | Implement secure development lifecycle and source code access controls | Engineering Lead | High | ISO A.8.4, A.8.25, NIST Protect |
 | 28 | Establish threat intelligence function | CTO | Medium | ISO A.5.7, NIST Identify |
 | 29 | Define disciplinary process for security violations | HR Director + Legal | Low | ISO A.6.4, HIPAA Administrative |
 
@@ -127,8 +128,8 @@ findings must be resolved before certification audit Stage 2.
 | # | Finding | Phase | Owner | Rating | ISO 27001 | HIPAA | NIST CSF |
 |---|---------|-------|-------|--------|-----------|-------|---------|
 | 1 | Audit trail on record modifications | 1 | Engineering | Critical | A.5.33 | Technical | Protect |
-| 2 | Incident response plan | 1 | CTO + Legal | Critical | A.5.24–26 | Administrative | Respond |
-| 3 | Role-based access controls | 1 | Engineering | Critical | A.8.3 | Technical | Protect |
+| 2 | Incident response plan | 1 | CTO + Legal | Critical | A.5.24–28 | Administrative | Respond |
+| 3 | Role-based access controls and multi-tenant isolation verification | 1 | Engineering | Critical | A.8.3 | Technical | Protect |
 | 4 | MFA enforcement | 1 | Engineering | Critical | A.8.5 | Technical | Protect |
 | 5 | Disaster recovery plan | 1 | CTO | Critical | A.8.13 | — | Recover |
 | 6 | Backup policy and verification | 1 | Engineering | Critical | A.8.13 | — | Recover |
@@ -142,7 +143,7 @@ findings must be resolved before certification audit Stage 2.
 | 14 | Vulnerability management program | 2 | Engineering | High | A.8.8 | — | Identify |
 | 15 | Centralized log management | 2 | Engineering | High | A.8.15–16 | Technical | Detect |
 | 16 | Supplier security program | 2 | CTO | High | A.5.19 | Administrative | Govern |
-| 17 | Endpoint security policy | 2 | CTO | High | A.7.9 | Physical | Protect |
+| 17 | Endpoint security and malware protection | 2 | CTO | High | A.7.9, A.8.7 | Physical | Protect |
 | 18 | Change management process | 2 | Engineering | High | A.8.32 | — | Protect |
 | 19 | Data retention and deletion policy | 2 | Legal + HR | High | A.8.10 | Technical | Protect |
 | 20 | DLP controls | 2 | Engineering | High | A.8.12 | — | Protect |
@@ -152,7 +153,7 @@ findings must be resolved before certification audit Stage 2.
 | 24 | Offboarding security procedures | 2 | HR Director | High | A.6.5 | Administrative | Govern |
 | 25 | Automatic session logoff | 2 | Engineering | High | A.8.3 | Technical | Protect |
 | 26 | Remote work security policy | 2 | CTO | High | A.6.7 | Physical | Protect |
-| 27 | Secure development lifecycle | 2 | Engineering | High | A.8.25 | — | Protect |
+| 27 | Secure development lifecycle and source code access | 2 | Engineering | High | A.8.4, A.8.25 | — | Protect |
 | 28 | Threat intelligence function | 2 | CTO | High | A.5.7 | — | Identify |
 | 29 | Disciplinary process | 2 | HR + Legal | High | A.6.4 | Administrative | Govern |
 | 30 | Clear desk and screen lock policy | 3 | HR Director | Moderate | A.7.7 | Physical | Protect |
