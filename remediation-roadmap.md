@@ -67,7 +67,7 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 | 4 | Enforce MFA across all systems | Engineering Lead | Low | ISO A.8.5, HIPAA Technical |
 | 5 | Establish and test disaster recovery plan | CTO | High | ISO A.8.13, NIST Recover |
 | 6 | Implement formal backup policy and verification | Engineering Lead | Medium | ISO A.8.13, NIST Recover |
-| 7 | Execute Business Associate Agreements with HRIS vendors | Legal + HR Director | Low | HIPAA Administrative |
+| 7 | Execute a Business Associate Agreement with AWS | Legal + CTO | Low | ISO A.5.19, HIPAA Administrative |
 | 8 | Implement data masking in non-production environments | Engineering Lead | Medium | ISO A.8.11, HIPAA Technical |
 | 9 | Establish cloud configuration management process | CTO + Engineering | Medium | ISO A.8.9, NIST Protect |
 | 10 | Implement formal privileged access management | CTO | Medium | ISO A.8.2, HIPAA Technical |
@@ -86,7 +86,7 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 | 13 | Implement security awareness training program | HR Director | Medium | ISO A.6.3, HIPAA Administrative |
 | 14 | Establish vulnerability management program | Engineering Lead | Medium | ISO A.8.8, NIST Identify |
 | 15 | Implement centralized log management and alerting | Engineering Lead | High | ISO A.8.15–16, NIST Detect |
-| 16 | Establish supplier security program | CTO | Medium | ISO A.5.19, HIPAA Administrative |
+| 16 | Establish supplier security program, including the HRIS vendor monitoring plan | CTO | Medium | ISO A.5.19, HIPAA Administrative |
 | 17 | Implement endpoint security and malware protection policy for remote workers | CTO | Low | ISO A.7.9, A.8.7, HIPAA Physical |
 | 18 | Implement formal change management process | Engineering Lead | Medium | ISO A.8.32, NIST Protect |
 | 19 | Establish data retention and deletion policy | Legal + HR Director | Low | ISO A.8.10, HIPAA Technical |
@@ -134,7 +134,7 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 | 4 | MFA enforcement | 1 | Engineering | Critical | A.8.5 | Technical | Protect |
 | 5 | Disaster recovery plan | 1 | CTO | Critical | A.8.13 | — | Recover |
 | 6 | Backup policy and verification | 1 | Engineering | Critical | A.8.13 | — | Recover |
-| 7 | Business associate agreements | 1 | Legal + HR | Critical | A.5.19 | Administrative | Govern |
+| 7 | Business associate agreement (AWS) | 1 | Legal + CTO | Critical | A.5.19 | Administrative | Govern |
 | 8 | Data masking — non-production | 1 | Engineering | Critical | A.8.11 | Technical | Protect |
 | 9 | Cloud configuration management | 1 | CTO + Eng | Critical | A.8.9 | — | Protect |
 | 10 | Privileged access management | 1 | CTO | Critical | A.8.2 | Technical | Protect |
@@ -143,7 +143,7 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 | 13 | Security awareness training | 2 | HR Director | High | A.6.3 | Administrative | Protect |
 | 14 | Vulnerability management program | 2 | Engineering | High | A.8.8 | — | Identify |
 | 15 | Centralized log management | 2 | Engineering | High | A.8.15–16 | Technical | Detect |
-| 16 | Supplier security program | 2 | CTO | High | A.5.19 | Administrative | Govern |
+| 16 | Supplier security program (incl. HRIS vendor monitoring) | 2 | CTO | High | A.5.19 | Administrative | Govern |
 | 17 | Endpoint security and malware protection | 2 | CTO | High | A.7.9, A.8.7 | Physical | Protect |
 | 18 | Change management process | 2 | Engineering | High | A.8.32 | — | Protect |
 | 19 | Data retention and deletion policy | 2 | Legal + HR | High | A.8.10 | Technical | Protect |
