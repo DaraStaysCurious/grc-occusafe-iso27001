@@ -31,13 +31,14 @@ and unverified.
 
 ## What We Found
 
-**38 security gaps. 12 are critical.**
+**41 control gaps. 11 are critical.**
 
 | Risk level | Count | Meaning |
-|-----------|-------|---------|
-| Critical | 12 | Immediate risk — no control exists |
-| High | 17 | Significant risk — control incomplete |
-| Moderate | 9 | Control present but unformalized |
+|---|---|---|
+| Critical | 11 | Immediate risk: no control exists |
+| High | 22 | Significant risk: control absent or incomplete |
+| Moderate | 8 | Control present but unformalized, or limited exposure |
+These 41 control gaps consolidate into 38 remediation findings in remediation-roadmap.md (12 critical, 17 high, 9 moderate).
 
 **The four most significant findings:**
 
