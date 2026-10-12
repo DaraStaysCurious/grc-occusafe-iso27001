@@ -89,6 +89,7 @@ AWS cloud infrastructure, 200 mid-market customers
 | [`nist-csf-mapping.md`](nist-csf-mapping.md) | Findings mapped to NIST CSF functions | ✅ Complete |
 | [`remediation-roadmap.md`](remediation-roadmap.md) | Prioritized findings with effort/impact matrix | ✅ Complete |
 | [`executive-summary.md`](executive-summary.md) | CEO-level one-pager — board ready | ✅ Complete |
+| vendor-risk-assessment.md | HRIS integration vendor risk review (Workday, ADP, BambooHR): attestation review, risk ratings, monitoring plan | ✅ Complete |
 
 ---
 
