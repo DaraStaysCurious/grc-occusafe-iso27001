@@ -137,7 +137,7 @@ ransomware, insider access, and multi-tenant exposure.
 | A.8.4 — Access to source code | Controls on source code access | Informal | No formal source code access restrictions or review process | **High** |
 | A.8.5 — Secure authentication | Secure authentication procedures | Basic — no MFA enforced | MFA not enforced across platform or internal systems | **Critical** |
 | A.8.7 — Protection against malware | Malware protection controls | Basic endpoint protection | No formal malware protection program or EDR tooling | **High** |
-| A.8.8 — Management of technical vulnerabilities | Vulnerability management program | None | No vulnerability scanning, no patch management process | **CHigh** |
+| A.8.8 — Management of technical vulnerabilities | Vulnerability management program | None | No vulnerability scanning, no patch management process | **High** |
 | A.8.9 — Configuration management | Secure configuration management | None | No configuration baselines — S3 incident root cause unresolved | **Critical** |
 | A.8.10 — Information deletion | Secure deletion of information | None | No data retention policy, no secure deletion procedure | **High** |
 | A.8.11 — Data masking | Masking of sensitive data | None | Employee health data not masked in non-production environments | **Critical** |
