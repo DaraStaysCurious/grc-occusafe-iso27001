@@ -68,7 +68,7 @@ across multiple stakeholder groups.
 | Security management process — risk analysis | Clause 6 — Risk assessment | Completed — this document | ✅ Addressed |
 | Security management process — risk management | A.5.1 — Information security policies | No formal policies | **Critical** |
 | Assigned security responsibility | A.5.2 — Security roles | CTO informally — not documented | **Critical** |
-| Workforce training and awareness | A.6.3 — Security awareness training | None | **Critical** |
+| Workforce training and awareness | A.6.3 — Security awareness training | None | **High** |
 | Evaluation — periodic security assessment | A.5.36 — Compliance review | None | **Moderate** |
 | Business associate agreements | A.5.19 — Supplier relationships | No BAAs with HRIS vendors | **Critical** |
 
@@ -116,7 +116,7 @@ across multiple stakeholder groups.
 | No Business Associate Agreements with HRIS vendors | BAA requirement | A.5.19 — Supplier relationships | **Critical** |
 | Engineers accessing real PHI in production | Minimum necessary principle | A.8.3 — Access restriction | **Critical** |
 | No PHI data masking in non-production environments | Minimum necessary principle | A.8.11 — Data masking | **Critical** |
-| No process for responding to patient rights requests | Privacy Rule — data subject rights | A.5.34 — Privacy and PII | **High** |
+| No process for responding to patient rights requests | Privacy Rule — data subject rights | A.5.34 — Privacy and PII | **Moderate** |
 
 ---
 
