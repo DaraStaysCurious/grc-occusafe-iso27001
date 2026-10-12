@@ -28,17 +28,14 @@ all four control themes.
 **Summary of findings:**
 
 | Theme | Controls assessed | Critical gaps | High gaps | Moderate gaps |
-|-------|-----------------|--------------|-----------|---------------|
-| Organizational | 15 | 4 | 6 | 3 |
-| People | 6 | 2 | 3 | 1 |
+|---|---|---|---|---|
+| Organizational | 14 | 5 | 5 | 4 |
+| People | 6 | 0 | 6 | 0 |
 | Physical | 8 | 0 | 1 | 2 |
-| Technological | 18 | 6 | 7 | 3 |
-| **Total** | **47** | **12** | **17** | **9** |
+| Technological | 18 | 6 | 10 | 2 |
+| Total | 46 | 11 | 22 | 8 |
 
-*Note: 46 of 93 Annex A controls assessed as not applicable —
-primarily physical controls not relevant to a remote,
-cloud-hosted environment. Full applicability determinations
-in Statement of Applicability Summary below.*
+*Note: 46 of 93 Annex A controls were assessed in this engagement (41 rated, 5 not applicable because physical controls do not apply to a remote, AWS-hosted environment). The remaining 47 were outside the scope of this readiness assessment. See the Statement of Applicability Summary below.*
 
 ---
 
@@ -56,9 +53,9 @@ in Statement of Applicability Summary below.*
 
 | Rating | Definition |
 |--------|-----------|
-| Critical | Control absent — immediate risk to data integrity, availability, or confidentiality |
-| High | Control partially present — significant gaps remain |
-| Moderate | Control present but not formalized or verified |
+| Critical | Control absent or ineffective, and the gap directly enables a top-priority risk from the risk assessment |
+| High | Control absent or partial: significant exposure, but not a direct enabler of a top-priority risk |
+| Moderate | Control present but not formalized or verified, or absent with limited exposure |
 | Low | Control present — minor improvements needed |
 | N/A | Control not applicable to OccuSafe's environment |
 
@@ -74,7 +71,7 @@ management program, no incident response plan.
 |---------|------------|---------------|-----|--------|
 | A.5.1 — Information security policies | Documented, approved, communicated policies | No formal policies exist | Complete absence of policy framework | **Critical** |
 | A.5.2 — Information security roles | Defined roles and responsibilities | CTO informally owns security — no formal definition | No documented roles, responsibilities, or accountability | **Critical** |
-| A.5.5 — Contact with authorities | Defined process for regulatory contact | No process defined | No OSHA, HHS, or law enforcement contact procedure | **High** |
+| A.5.5 — Contact with authorities | Defined process for regulatory contact | No process defined | No OSHA, HHS, or law enforcement contact procedure | **Moderate** |
 | A.5.7 — Threat intelligence | Process for gathering and acting on threat intel | None | No threat monitoring or intelligence function | **High** |
 | A.5.19 — Supplier relationships | Security requirements for suppliers | No supplier security program | HRIS integrations — Workday, ADP, BambooHR — unassessed | **Critical** |
 | A.5.24 — Incident response planning | Documented incident response plan | None | No IR plan, no defined roles, no communication procedures | **Critical** |
@@ -83,7 +80,7 @@ management program, no incident response plan.
 | A.5.27 — Learning from incidents | Post-incident review process | S3 incident reviewed informally — no formal process | Root cause of S3 incident unresolved at process level | **High** |
 | A.5.28 — Evidence collection | Forensic evidence collection procedures | None | No chain of custody or evidence preservation process | **High** |
 | A.5.33 — Protection of records | Controls ensuring record authenticity and integrity | None | No audit trail, no integrity verification on safety records | **Critical** |
-| A.5.34 — Privacy and PII | Privacy controls for personal information | Informal — no formal privacy program | No data subject rights process, no privacy policy | **High** |
+| A.5.34 — Privacy and PII | Privacy controls for personal information | Informal — no formal privacy program | No data subject rights process, no privacy policy | **Moderate** |
 | A.5.36 — Compliance review | Regular review of security compliance | None | No internal audit function, no compliance review cadence | **Moderate** |
 | A.5.37 — Documented operating procedures | Documented procedures for security operations | None | No documented procedures for any security operation | **Moderate** |
 
@@ -97,12 +94,12 @@ security procedures.
 
 | Control | Requirement | Current state | Gap | Rating |
 |---------|------------|---------------|-----|--------|
-| A.6.1 — Screening | Background verification for employees | No formal screening process | No background checks — especially concerning for staff with health data access | **Critical** |
+| A.6.1 — Screening | Background verification for employees | No formal screening process | No background checks — especially concerning for staff with health data access | **High** |
 | A.6.2 — Terms of employment | Security responsibilities in employment terms | Not included in employment contracts | No security obligations formally established for any employee | **High** |
-| A.6.3 — Security awareness training | Regular security awareness and training | None | No training program of any kind — phishing, data handling, incident reporting | **Critical** |
+| A.6.3 — Security awareness training | Regular security awareness and training | None | No training program of any kind — phishing, data handling, incident reporting | **High** |
 | A.6.4 — Disciplinary process | Formal process for security violations | None | No defined consequences for security policy violations | **High** |
 | A.6.5 — Responsibilities after termination | Security obligations post-employment | No offboarding security process | No credential revocation, no access removal procedure | **High** |
-| A.6.7 — Remote working | Security controls for remote workers | Informal | Remote engineering team — no formal remote work security policy | **Moderate** |
+| A.6.7 — Remote working | Security controls for remote workers | Informal | Remote engineering team — no formal remote work security policy | **High** |
 
 ---
 
@@ -140,34 +137,33 @@ ransomware, insider access, and multi-tenant exposure.
 | A.8.4 — Access to source code | Controls on source code access | Informal | No formal source code access restrictions or review process | **High** |
 | A.8.5 — Secure authentication | Secure authentication procedures | Basic — no MFA enforced | MFA not enforced across platform or internal systems | **Critical** |
 | A.8.7 — Protection against malware | Malware protection controls | Basic endpoint protection | No formal malware protection program or EDR tooling | **High** |
-| A.8.8 — Management of technical vulnerabilities | Vulnerability management program | None | No vulnerability scanning, no patch management process | **Critical** |
+| A.8.8 — Management of technical vulnerabilities | Vulnerability management program | None | No vulnerability scanning, no patch management process | **CHigh** |
 | A.8.9 — Configuration management | Secure configuration management | None | No configuration baselines — S3 incident root cause unresolved | **Critical** |
 | A.8.10 — Information deletion | Secure deletion of information | None | No data retention policy, no secure deletion procedure | **High** |
-| A.8.11 — Data masking | Masking of sensitive data | None | Employee health data not masked in non-production environments | **High** |
+| A.8.11 — Data masking | Masking of sensitive data | None | Employee health data not masked in non-production environments | **Critical** |
 | A.8.12 — Data leakage prevention | DLP controls | None | No DLP tooling or monitoring | **High** |
 | A.8.13 — Information backup | Backup policy and procedures | Informal — unverified | No formal backup policy, no verified recovery testing | **Critical** |
 | A.8.15 — Logging | Security event logging | Partial — AWS CloudTrail enabled | No centralized log management, no log review process | **High** |
 | A.8.16 — Monitoring activities | Network and system monitoring | None | No security monitoring program or SIEM | **High** |
 | A.8.17 — Clock synchronization | Synchronized clocks across systems | Unknown | No verified clock synchronization — affects audit trail integrity | **Moderate** |
 | A.8.24 — Use of cryptography | Cryptography policy and key management | Partial — TLS in transit | No formal cryptography policy, no key management program | **High** |
-| A.8.25 — Secure development lifecycle | Security in development process | None | No SDL, no security requirements in development process | **Moderate** |
-| A.8.32 — Change management | Formal change management process | Informal | No change management process — configuration changes uncontrolled | **Critical** |
+| A.8.25 — Secure development lifecycle | Security in development process | None | No SDL, no security requirements in development process | **High** |
+| A.8.32 — Change management | Formal change management process | Informal | No change management process — configuration changes uncontrolled | **High** |
 | A.8.34 — Protection of information systems during audit | Controls during audit activities | None | No procedure for protecting systems during assessment activities | **Moderate** |
 
 ---
 
 ## Statement of Applicability Summary
 
-**93 Annex A controls — applicability determination:**
+**93 Annex A controls, by assessment status:**
 
 | Status | Count | Notes |
-|--------|-------|-------|
-| Applicable — implemented | 3 | TLS encryption, AWS CloudTrail partial, basic endpoint protection |
-| Applicable — partially implemented | 8 | Controls present but not formalized or verified |
-| Applicable — not implemented | 36 | Controls required but absent — primary remediation targets |
-| Not applicable | 46 | Primarily physical controls — remote, AWS-hosted environment |
+|---|---|---|
+| Assessed, gap rated | 41 | 11 critical, 22 high, 8 moderate |
+| Assessed, not applicable | 5 | Physical controls not relevant to a remote, AWS-hosted environment (A.7.1, A.7.2, A.7.6, A.7.8, A.7.11) |
+| Not assessed in this engagement | 47 | Outside the scope of this readiness assessment; to be completed before the Stage 1 audit |
 
-**The 3 implemented controls:**
+**The 3 controls with a partial safeguard already in place:**
 
 | Control | Implementation status |
 |---------|----------------------|
@@ -175,8 +171,7 @@ ransomware, insider access, and multi-tenant exposure.
 | A.8.15 — Logging (partial) | AWS CloudTrail enabled — no centralized management |
 | A.8.7 — Malware protection (partial) | Basic endpoint protection — no formal program |
 
-*Full Statement of Applicability available as a standalone
-document on request.*
+*A full 93-control Statement of Applicability would be completed during certification preparation.*
 
 ---
 
