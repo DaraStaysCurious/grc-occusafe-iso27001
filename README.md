@@ -62,7 +62,7 @@ AWS cloud infrastructure, 200 mid-market customers
 |-----------|---------|
 | ISO 27001:2022 | Primary certification framework — ISMS requirements and Annex A controls |
 | HIPAA Security Rule | Employee health data protection — administrative, physical, technical safeguards |
-| NIST CSF | Findings mapped to Identify, Protect, Detect, Respond, Recover functions |
+| NIST CSF 2.0 | Findings mapped to the Govern, Identify, Protect, Detect, Respond, and Recover functions |
 | NIST 800-30 | Underlying risk assessment methodology |
 
 **Data in scope:**
