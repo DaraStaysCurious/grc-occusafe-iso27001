@@ -111,7 +111,7 @@ documents above.*
 
 Platform Implementation
 
-The gap analysis above documents what OccuSafe needs. This section shows it operationalized in a real GRC platform — not just described, but actually configured.
+The gap analysis above documents what OccuSafe needs. This section shows it operationalized as a working data model in ServiceNow App Engine Studio, not just described but actually configured.
 
 Using a ServiceNow developer instance, I built a compliance data model in App Engine Studio (ServiceNow's GRC/IRM module is subscription-gated even on free developer tiers, so I built the equivalent structure directly):
 
