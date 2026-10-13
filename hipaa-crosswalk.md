@@ -26,9 +26,7 @@ Rule safeguards — identifying where a single remediation closes
 gaps in both frameworks simultaneously, and where HIPAA introduces
 requirements beyond ISO 27001's scope.
 
-**Key finding:** 14 of OccuSafe's most critical remediations
-satisfy both ISO 27001 and HIPAA requirements. Unified remediation
-reduces total implementation effort by an estimated 40%.
+**Key finding:** 14 unified remediations each satisfy both ISO 27001 and HIPAA requirements, so a single fix closes gaps in both frameworks.
 
 ---
 
@@ -147,9 +145,9 @@ gap and one HIPAA requirement simultaneously.**
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [nist-csf-mapping.md](nist-csf-mapping.md)*
