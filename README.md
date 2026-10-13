@@ -115,19 +115,19 @@ The gap analysis above documents what OccuSafe needs. This section shows it oper
 
 Using a ServiceNow developer instance, I built a compliance data model in App Engine Studio (ServiceNow's GRC/IRM module is subscription-gated even on free developer tiers, so I built the equivalent structure directly):
 
-Policy table — 3 governing policies (Information Security, Incident Response, Access Control), each mapped to the ISO 27001 domains they cover.
-Control table — 8 controls pulled directly from this repo's gap analysis (A.5.1, A.5.24, A.8.2, A.8.3, A.8.5, A.8.8, A.8.13, A.8.32), each carrying its actual current-state / target-state language from the assessment above, linked to its governing policy.
+Policy table — 3 governing policies (Information Security, Incident Response, Access Control), each tagged with its related framework (ISO 27001).
+Control table — 9 controls pulled directly from this repo's gap analysis (A.5.1, A.5.24, A.5.33, A.8.2, A.8.3, A.8.5, A.8.8, A.8.13, A.8.32), each carrying its current state, gap, and rating from the assessment above, linked to its governing policy.
 Risk table — the four key findings from the executive summary, each linked to the specific control that mitigates it.
 
 The result is a working relational chain — Risk → Mitigating Control → Governing Policy — the same structure underlying commercial platforms like Vanta, Drata, or Archer.
-<img width="1695" height="1112" alt="Screenshot 2026-09-08 at 7 04 27 PM" src="https://github.com/user-attachments/assets/8a0bb1ac-e49a-4bee-904e-a0e596294127" />
+<img width="1727" height="1051" alt="A" src="https://github.com/user-attachments/assets/e822a1f6-0a6c-4b7b-bb06-1ca8248a2af6" />
 Policy library - three governing policies mapped to ISO 27001, each built from a documented Critical-rated gap in the assessment above.
-<img width="1689" height="1114" alt="Screenshot 2026-09-08 at 7 02 14 PM" src="https://github.com/user-attachments/assets/baaa4172-4fa5-4666-9eab-b412d1e81183" />
-Control library - eight Annex A controls from the gap analysis, each carrying its current-state/target-state language and linked back to its governing policy.
-<img width="1688" height="1110" alt="Screenshot 2026-09-08 at 7 09 10 PM" src="https://github.com/user-attachments/assets/1e86248a-1cee-4f8f-a987-dfdafae6b230" />
+<img width="1724" height="1048" alt="B" src="https://github.com/user-attachments/assets/d139a550-2846-4b07-99cb-2dae7742fa53" />
+Control library - nine Annex A controls from the gap analysis, each rated and linked to its governing policy.
+<img width="1726" height="1048" alt="C" src="https://github.com/user-attachments/assets/a5ae3757-bb76-429a-97ea-a96b8ab76703" />
 Risk register - the four key findings from the executive summary, each linked to its mitigating control via a Reference field.
-<img width="1680" height="1112" alt="Screenshot 2026-09-08 at 6 59 57 PM" src="https://github.com/user-attachments/assets/fceef039-9b75-4ff7-b540-df85bfbcd397" />
-The full relational chain in practice: a real risk (alterable safety records, no audit trail) linked directly to the control that mitigates it (A.8.32 — Change management).
+<img width="1718" height="1049" alt="D" src="https://github.com/user-attachments/assets/fdf9ee8f-cb53-40e3-9531-501186bef2af" />
+The full relational chain in practice: a real risk (alterable safety records, no audit trail) linked directly to the control that mitigates it (A.5.33 — Protection of records).
 
 ---
 
@@ -135,7 +135,7 @@ The full relational chain in practice: a real risk (alterable safety records, no
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
 
 ---
 
