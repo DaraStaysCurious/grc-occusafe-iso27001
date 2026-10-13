@@ -43,9 +43,9 @@ immediately visible and trigger immediate response.
 
 | Score | Risk Level | Action |
 |-------|-----------|--------|
-| Very High | Immediate remediation required | Stop / contain |
-| High | Remediation within 30 days | Priority action |
-| Moderate | Remediation within 90 days | Planned action |
+| Very High | Immediate remediation required (Phase 1, 0–30 days) | Stop / contain |
+| High | Remediation within 90 days (Phases 1–2) | Priority action |
+| Moderate | Remediation within 180 days (Phase 3) | Planned action |
 | Low | Monitor | Ongoing awareness |
 
 **Finding sources used in this assessment:**
@@ -81,7 +81,7 @@ immediately visible and trigger immediate response.
 |---------|--------|
 | **Threat source** | Ransomware groups, infrastructure failure, accidental deletion |
 | **Threat event** | Encryption or destruction of OccuSafe database — complete operational shutdown |
-| **Why it's high priority** | No disaster recovery plan; no verified backups; OSHA inspection during outage = immediate regulatory violation |
+| **Why it's high priority** | No disaster recovery plan; no verified backups; an OSHA records request during an outage could leave customers unable to produce records within OSHA's required timeframe |
 | **OHS parallel** | All safety records in one filing cabinet with no copies and no contingency plan |
 | **Affected assets** | AWS production environment, RDS database, S3 storage, all customer data |
 
@@ -122,10 +122,10 @@ immediately visible and trigger immediate response.
 | No disaster recovery plan | Process | Availability | Critical |
 | No verified backup process | Technical | Availability | Critical |
 | No formal access control program | Process | Insider | Critical |
-| Role-based access not enforced at data level | Technical | Insider | High |
+| Role-based access not enforced at data level | Technical | Insider | Critical |
 | Multi-tenant isolation unverified | Technical | External / Insider | High |
-| No cloud configuration review process | Process | External / Insider | High |
-| No formal incident response plan | Process | External | High |
+| No cloud configuration review process | Process | External / Insider | Critical |
+| No formal incident response plan | Process | External | Critical |
 | Security awareness training absent | People | All categories | High |
 | CTO resistance to security findings | Organizational | All categories | Predisposing condition |
 | Single AWS region — no geographic redundancy | Technical | Availability | Moderate |
@@ -141,7 +141,7 @@ immediately visible and trigger immediate response.
 | Record alteration — no audit trail | High | High | Very High | **Very High** |
 | Ransomware — no DR plan | Moderate | High | Very High | **Very High** |
 | Insider data exposure — no access controls | High | High | High | **Very High** |
-| Multi-tenant data breach | Moderate | High | Very High | **High** |
+| Multi-tenant data breach | Low | High | Very High | **High** |
 | External platform breach | Moderate | High | High | **High** |
 | Accidental misconfiguration | High | High | Moderate | **High** |
 | Unavailability during OSHA inspection | Low | Moderate | Very High | **Moderate** |
@@ -150,8 +150,7 @@ immediately visible and trigger immediate response.
 
 ## Risk Priority Summary
 
-**Four findings require immediate action before any other
-remediation activity begins.**
+**Four findings take top priority within Phase 1 of the roadmap.**
 
 | Priority | Finding | Rationale |
 |----------|---------|-----------|
@@ -169,9 +168,9 @@ in subsequent documents.*
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [iso27001-gap-analysis.md](iso27001-gap-analysis.md)*
