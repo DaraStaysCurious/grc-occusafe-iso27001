@@ -141,9 +141,9 @@ a risk factor that affects control implementation likelihood.
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [risk-assessment.md](risk-assessment.md)*
