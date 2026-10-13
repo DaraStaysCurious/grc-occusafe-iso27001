@@ -30,7 +30,8 @@ This assessment evaluates each vendor's publicly documented security
 attestations, identifies where attestation access is restricted or
 scope is ambiguous, and assigns a residual risk rating consistent
 with the methodology used throughout this repo.
-Review date: [09/2026]
+
+**Review date:** October 2026
 
 ---
 
@@ -111,7 +112,7 @@ gap analysis.
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
