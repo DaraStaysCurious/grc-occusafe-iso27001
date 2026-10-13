@@ -120,13 +120,13 @@ Control table — 9 controls pulled directly from this repo's gap analysis (A.5.
 Risk table — the four key findings from the executive summary, each linked to the specific control that mitigates it.
 
 The result is a working relational chain — Risk → Mitigating Control → Governing Policy — the same structure underlying commercial platforms like Vanta, Drata, or Archer.
-<img width="1727" height="1051" alt="A" src="https://github.com/user-attachments/assets/e822a1f6-0a6c-4b7b-bb06-1ca8248a2af6" />
+<img width="1718" height="1049" alt="D" src="https://github.com/user-attachments/assets/574e810a-3c41-40a1-9511-0a4dead31f4e" />
 Policy library - three governing policies mapped to ISO 27001, each built from a documented Critical-rated gap in the assessment above.
-<img width="1724" height="1048" alt="B" src="https://github.com/user-attachments/assets/d139a550-2846-4b07-99cb-2dae7742fa53" />
+<img width="1727" height="1051" alt="A" src="https://github.com/user-attachments/assets/a5b68077-7578-4d65-9661-df64e710e339" />
 Control library - nine Annex A controls from the gap analysis, each rated and linked to its governing policy.
-<img width="1726" height="1048" alt="C" src="https://github.com/user-attachments/assets/a5ae3757-bb76-429a-97ea-a96b8ab76703" />
+<img width="1724" height="1048" alt="B" src="https://github.com/user-attachments/assets/e618454d-9b99-4247-9595-126b64f16e8e" />
 Risk register - the four key findings from the executive summary, each linked to its mitigating control via a Reference field.
-<img width="1718" height="1049" alt="D" src="https://github.com/user-attachments/assets/fdf9ee8f-cb53-40e3-9531-501186bef2af" />
+<img width="1726" height="1048" alt="C" src="https://github.com/user-attachments/assets/e1a14b54-b0fa-4ddd-bfc6-95790f594f6b" />
 The full relational chain in practice: a real risk (alterable safety records, no audit trail) linked directly to the control that mitigates it (A.5.33 — Protection of records).
 
 ---
