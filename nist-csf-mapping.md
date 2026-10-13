@@ -57,6 +57,7 @@ strategy, policies, and accountability.**
 | GV.RR — Roles and responsibilities | Defined cybersecurity roles | CTO informally — undocumented | No formal roles, accountability, or authority defined |
 | GV.PO — Policy | Information security policies | None | No policies of any kind exist |
 | GV.OV — Oversight | Management oversight of cybersecurity | Informal | No formal review cadence, no board reporting |
+| GV.SC — Supply chain risk management | Supplier cybersecurity risk is managed | No supplier security program | HRIS integrations and AWS unassessed; no documented BAA with AWS |
 
 **Critical gap:** Without Govern, every other function lacks
 the organizational foundation to operate effectively. Policies,
@@ -87,9 +88,9 @@ institutionalization.
 
 | Subcategory | Requirement | Current state | Gap |
 |-------------|------------|---------------|-----|
-| PR.AA — Identity management and access control | Access controls enforced | Not enforced at data level | Role-based access absent — minimum necessary violated |
+| PR.AA — Identity management and access control | Access controls enforced | Not enforced at data level | Role-based access absent: HIPAA minimum necessary principle at risk |
 | PR.AT — Awareness and training | Security awareness program | None | No training program of any kind |
-| PR.DS — Data security | Data protection controls | Partial — TLS in transit | No encryption at rest, no data masking, no DLP |
+| PR.DS — Data security | Data protection controls | Partial — TLS in transit | No formal cryptography policy or key management, no data masking, no DLP |
 | PR.PS — Platform security | Secure configuration management | None | No configuration baselines — S3 incident root cause |
 | PR.IR — Technology infrastructure resilience | Backup and recovery | Informal — unverified | No formal backup policy, no recovery testing |
 
@@ -126,12 +127,12 @@ without detection.
 | RS.CO — Incident response reporting | Communication during incidents | None | No notification procedures — customers, regulators, legal |
 | RS.MI — Incident mitigation | Containing and mitigating incidents | None | No containment procedures defined |
 
-**Critical gap:** This is OccuSafe's weakest function. A PHI
-breach, ransomware attack, or data integrity incident today
-would be managed entirely by improvisation. HIPAA breach
-notification requirements — 60-day notification to HHS,
-individual notification to affected employees — would likely
-be missed entirely.
+**Critical gap:** This is OccuSafe's weakest function. A breach
+involving employee health data, a ransomware attack, or a data
+integrity incident today would be managed entirely by
+improvisation. Breach notification obligations, including
+HIPAA's 60-day outer limit where it applies, would likely
+be missed.
 
 ---
 
@@ -189,10 +190,10 @@ expectations to customers during an outage.
 | Function | Priority action | Why |
 |----------|----------------|-----|
 | Govern | Establish information security policy framework | Nothing else can be formalized without policies |
-| Identify | Institutionalize risk assessment as an ongoing process | Current maturity disappears without a repeating process |
-| Protect | Implement role-based access controls at data level | Closes the most critical ISO 27001 and HIPAA gaps simultaneously |
+| Identify | Establish vulnerability management program (roadmap #14) and repeat this risk assessment on a recurring cycle under the internal audit function (roadmap #33) |
+| Protect | Implement role-based access controls at data level | Closes a critical ISO 27001 gap and a HIPAA Technical safeguard gap with one fix |
 | Detect | Implement centralized log management and alerting | OccuSafe currently cannot detect incidents in progress |
-| Respond | Develop and test incident response plan | HIPAA breach notification obligations cannot be met without it |
+| Respond | Develop and test incident response plan | Breach notification obligations (including HIPAA where applicable) cannot be met without it |
 | Recover | Establish and test disaster recovery plan | Ransomware today = indefinite operational shutdown |
 
 ---
@@ -201,9 +202,9 @@ expectations to customers during an outage.
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [remediation-roadmap.md](remediation-roadmap.md)*
