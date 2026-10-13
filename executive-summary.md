@@ -35,9 +35,10 @@ and unverified.
 
 | Risk level | Count | Meaning |
 |---|---|---|
-| Critical | 11 | Immediate risk: no control exists |
+| Critical | 11 | Immediate risk: no effective control exists |
 | High | 22 | Significant risk: control absent or incomplete |
 | Moderate | 8 | Control present but unformalized, or limited exposure |
+
 These 41 control gaps consolidate into 38 remediation findings in remediation-roadmap.md (12 critical, 17 high, 9 moderate).
 
 **The four most significant findings:**
@@ -46,8 +47,8 @@ These 41 control gaps consolidate into 38 remediation findings in remediation-ro
 |---------|---------------|
 | No audit trail on record modifications | Safety records can be altered without detection — silently and indefinitely |
 | No disaster recovery plan | Ransomware attack today = indefinite operational shutdown with no recovery path |
-| No access controls at data level | Employee health records accessible beyond HR — HIPAA violation |
-| No incident response plan | A PHI breach today would be managed by improvisation — HIPAA notification deadlines would be missed |
+| No access controls at data level | Employee health records accessible beyond HR — potential HIPAA exposure |
+| No incident response plan | A PHI breach today would be managed by improvisation — breach notification deadlines could be missed |
 
 ---
 
@@ -63,8 +64,7 @@ assessment from a standard SaaS security review.
 
 **2. Regulatory and legal harm**
 - OSHA inspection with inaccessible records = immediate citation
-- HIPAA breach without notification = HHS investigation, fines
-  up to $1.9M per violation category
+- HIPAA breach without timely notification = HHS investigation and civil monetary penalties
 - Altered records in litigation = evidence tampering exposure
 - Lost enterprise deals = continued revenue impact
 
@@ -129,9 +129,9 @@ within the first renewed or new enterprise contract.
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
-*Return to: [README.md](../README.md)*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
+*Return to: [README.md](README.md)*
