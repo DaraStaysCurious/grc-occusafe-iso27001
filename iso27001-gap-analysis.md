@@ -163,7 +163,7 @@ ransomware, insider access, and multi-tenant exposure.
 | Assessed, not applicable | 5 | Physical controls not relevant to a remote, AWS-hosted environment (A.7.1, A.7.2, A.7.6, A.7.8, A.7.11) |
 | Not assessed in this engagement | 47 | Outside the scope of this readiness assessment; to be completed before the Stage 1 audit |
 
-**The 3 controls with a partial safeguard already in place:**
+**The 3 controls with a technical safeguard already in place:**
 
 | Control | Implementation status |
 |---------|----------------------|
@@ -179,9 +179,9 @@ ransomware, insider access, and multi-tenant exposure.
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [hipaa-crosswalk.md](hipaa-crosswalk.md)*
