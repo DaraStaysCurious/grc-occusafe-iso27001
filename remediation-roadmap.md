@@ -1,6 +1,6 @@
 # Remediation Roadmap
-> Every finding has an owner, a due date, and a definition
-> of done. A roadmap without those three things is a wish list.
+> Every finding has an owner, a phase deadline, and a framework mapping.
+> A roadmap without owners and deadlines is a wish list.
 
 ---
 
@@ -22,7 +22,7 @@ three phases — Immediate, Short Term, and Medium Term — against
 a 12-month ISO 27001 certification timeline.
 
 38 findings require remediation. 12 are critical. All 12 critical
-findings must be resolved before certification audit Stage 2.
+findings must be resolved before Phase 2 closes.
 
 **Remediation summary:**
 
@@ -57,7 +57,7 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 ## Phase 1 — Immediate Actions
 ### 0–30 Days — Stop the Bleeding
 
-**12 critical findings. All must be resolved before Phase 2.**
+**12 critical findings. All must be resolved before Phase 2 closes.**
 
 | # | Finding | Owner | Effort | Frameworks closed |
 |---|---------|-------|--------|------------------|
@@ -173,9 +173,9 @@ Note: a roadmap finding is rated by the severity of the specific gap it closes. 
 
 **Dara Thomas** — GRC Analyst & Consultant | Human-Centered Risk & Compliance
 
-[LinkedIn](YOUR_LINKEDIN_URL) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious)
+[LinkedIn](https://www.linkedin.com/in/darafthomas/) · dara.thomas.grc@gmail.com · [GitHub Portfolio](https://github.com/DaraStaysCurious) · [Web Portfolio](https://darasecures.cloud/)
 
 ---
 
-*Part of the [grc-occusafe-iso27001](../README.md) repository.*
+*Part of the [grc-occusafe-iso27001](README.md) repository.*
 *Next: [executive-summary.md](executive-summary.md)*
